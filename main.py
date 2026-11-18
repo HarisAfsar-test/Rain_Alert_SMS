@@ -1,11 +1,12 @@
 import requests
+import os
 #CONSTANTS
-MY_LAT=33.640091
-MY_LON=73.066293
-API_KEY="52eb61189c4b96e5b3ca808101641425"
-API_KEY_2= 'txb_6pQteiktRa95NdWlHg9cT7daFMGhvYkm'
-DEVICE_ID="6afd954b5b9635c5dd3cc774"
-NUMBER= "+923355785260"
+MY_LAT=os.environ.get("MY_LAT")
+MY_LON=os.environ.get("MY_LON")
+API_KEY=os.environ.get("API_KEY")
+API_KEY_2=os.environ.get("API_KEY_2")
+DEVICE_ID=os.environ.get("DEVICE_ID")
+NUMBER=os.environ.get("NUMBER")
 parameters={
     "lat":MY_LAT,
     "lon":MY_LON,
